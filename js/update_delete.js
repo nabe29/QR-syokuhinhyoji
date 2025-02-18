@@ -1,12 +1,5 @@
 // Firebaseの詳細情報
 const firebaseConfig = {
-    apiKey: "AIzaSyCaaoJyYSuI5R0211Jj_VoftTyDaA3nT2I",
-    authDomain: "it222293.firebaseapp.com",
-    projectId: "it222293",
-    storageBucket: "it222293.appspot.com",
-    messagingSenderId: "307943257880",
-    appId: "1:307943257880:web:9977434d41e9000b9cd06d",
-    measurementId: "G-K8J4K585WF"
 };
 //firestoreのインスタンスを初期化。前準備。
 firebase.initializeApp(firebaseConfig);
