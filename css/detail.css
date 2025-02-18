@@ -1,0 +1,41 @@
+html {
+    background-color: #FBF6EE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ページの上部 */
+.header {
+    background-color: #FFB534;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* 戻るボタン（id） */
+#back {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* タイトル */
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+    margin-right: 30%;
+}
+
+.item{
+    text-align: center;
+}

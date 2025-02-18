@@ -1,0 +1,152 @@
+/* ページ全体*/
+html {
+    background-color: #FBF6EE;
+}
+
+/* ページ全体のmarginとpaddingをなくす */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ページ左右の余白 */
+#content {
+    margin-top: 10px;
+}
+
+/* ページの上部 */
+.header {
+    background-color: #FFB534;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* ログアウトボタン（class）
+.outbtn {
+    text-align: center;
+} */
+
+/* ログアウトボタン（id） */
+#outbtn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+/* ログアウトボタンの画像 */
+#out-img {
+    margin-right: 5px;
+    width: 30px;
+}
+
+/* タイトル */
+h1 {
+    flex: 1;
+    /* 残りの空間を h1 に均等に割り当てる */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+    margin-right: 12%;
+    margin-left: 10%;
+}
+
+/* 一覧画面の編集と新規商品登録のクラス */
+.nextbtn {
+    display: flex;
+    justify-content: center;
+}
+
+/* 一覧画面の編集のボタン */
+/* #listButton {
+    width: 170px;
+    height: 70px;
+    font-size: 20px;
+    margin-left: 35%;
+    border: none;
+    background-color: #C1F2B0;
+     影の設定 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+/* .itemContainer {
+    break-inside: avoid; /* 列またがりを防ぐ *
+} */
+
+
+/* 新規商品登録のボタン */
+#registrationButton {
+    align-items: center;
+    width: 170px;
+    height: 70px;
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #C1F2B0;
+    /* 影の設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 商品一覧（h3テキスト） */
+#listtext {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#dome{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* firebaseの内容を表示するdiv */
+#dataList {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 5; /*列数を設定*/
+    column-gap: 30px; /*列の間隔を設定*/
+    margin-left: 20px;
+ 
+}
+
+/* jsで作成されたdiv */
+.itemContainer {
+    top: -10px;
+    width: 14%;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
+    background-color: #C1F2B0;
+    border-radius: 15px 15px 15px 15px;
+    text-decoration: none;
+    /* 影の設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 画像 */
+#itemImg {
+    display: block;
+    /* .itemContainer いっぱいに広げる */
+    width: 100%;
+    /* アスペクト比を維持して高さを自動調整 */
+    height: auto;
+    /* 画像を保持し、余白を追加して指定されたサイズにフィット */
+    object-fit: cover;
+    margin-bottom: 20px;
+    /* 左上の角を丸くする半径 */
+    border-top-left-radius: 15px;
+    /* 右上の角を丸くする半径 */
+    border-top-right-radius: 15px; 
+}
+
+/* aタグ */
+#linktext {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

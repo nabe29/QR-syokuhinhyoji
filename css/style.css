@@ -1,0 +1,36 @@
+.data{
+    display: none;
+}
+
+.g-signin2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+html{
+    background-color: #607bb4;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.QRcode{
+    width: 100px;
+}
+
+.image-google{
+    width: 20px;
+}
+#loginMenu{
+    display:flex;
+}
+h2{
+    text-align: center;
+}

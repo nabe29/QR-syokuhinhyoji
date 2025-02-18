@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="./css/detail.css">
+    <title>Firestore Document Viewer</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="back">
+            <button id="back">＜　メニュー</button>
+        </div>
+        <!-- <h1>詳細</h1> -->
+    </div>
+    <div class="item">
+        <h3 class="goodsName">商品名</h3>
+        <p id="goodsName" class="goodsName"></p>
+        <p id="error"></p>
+        <h3 class="goodsPreview">商品画像</h3>
+        <img id="goodsPreview" class="goodsPreview" style="max-width: 300px; margin-top: 20px;" />
+        <h3 class="description">商品の説明</h3>
+        <p id="description" class="description"></p>
+        <h3 class="component">栄養成分表示</h3>
+        <p id="component" class="component"></p>
+        <h3 class="notes">注意書き</h3>
+        <p id="notes" class="notes"></p>
+        <h3 class="warm">レンジの温め時間</h3>
+        <p id="warm" class="warm"></p>
+        <h3 class="seller">販売元</h3>
+        <p id="seller" class="seller"></p>
+        <h3 class="category">カテゴリ名</h3>
+        <p id="category" class="category"></p>
+        <h3 class="material">原材料</h3>
+        <p id="material" class="material"></p>
+        <h3 class="productionArea">産地</h3>
+        <p id="productionArea" class="productionArea"></p>
+        <h3 class="allergy">アレルゲン</h3>
+        <p id="allergy" class="allergy" name="allergy" value=""></p>
+        <!-- <h3 class="file-p2">栄養成分のグラフ</h3>
+        <p  id="file-p2" class="file-p2" type="file"></p><br>
+        <img id="graphPreview" class="file-p2" style="max-width: 300px; margin-top: 20px;" /> -->
+        <h3 class="cost">値段</h3>
+        <p id="cost" class="cost">円</p>
+    </div>
+    <hr>
+    <!-- QR Code Generatorのライブラリを読み込む -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <!-- External JavaScript file -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-storage.js"></script>
+    <script type="module" src="js/detail.js"></script>
+</body>
+
+</html>

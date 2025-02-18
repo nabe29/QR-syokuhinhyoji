@@ -1,0 +1,149 @@
+.data {
+    display: none;
+}
+
+.g-signin2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+html {
+    background-color: #FBF6EE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* 要素を横に並べる */
+    align-items: center;
+    background-color: #FFB534;
+    padding: 10px;
+    /* 必要に応じてパディングを調整 */
+}
+
+.outbtn {
+    background: none;
+    border: none;
+}
+
+#out-img {
+    width: 30px;
+    transition: opacity .3s;
+}
+
+.header-center {
+    display: flex;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+#QRcode {
+    width: 50px;
+    transform: rotate(15deg);
+    /* 傾ける角度を指定 */
+}
+
+#foodgroup {
+    width: 90px;
+    /* 画像の幅が親要素に合わせて調整される */
+    height: auto;
+    /* 高さは自動で計算され、比率が保持される */
+    padding-right: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* 横線 */
+.horizontal-line {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-line:before,
+.horizontal-line:after {
+    content: "";
+    height: 2px;
+    flex-grow: 2;
+    background-color: #7f846d;
+}
+
+.horizontal-line:before {
+    margin-right: 1rem;
+}
+
+.horizontal-line:after {
+    margin-left: 1rem;
+}
+
+
+#googlesignin {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+#image-google {
+    padding-top: 2px;
+    width: 50px;
+}
+
+#loginMenu {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+#sta {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.new-login {
+    text-align: center;
+    margin-top: 20px;
+    /* 必要に応じて上部の余白を調整 */
+}
+
+.new-login input {
+    width: 300px;
+    height: 20px;
+    margin: 5px 0;
+}
+
+.new-login button {
+    margin: 5px 0;
+    height: 50px;
+}

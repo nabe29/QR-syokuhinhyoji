@@ -1,0 +1,37 @@
+/* ページ全体*/
+html {
+    background-color: #FBF6EE;
+}
+
+/* ページの上部 */
+.header {
+    background-color: #FFB534;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* ページ全体のmarginとpaddingをなくす  */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ページ左右の余白 */
+#content {
+    margin: 10px;
+}
+
+/* 戻るボタン */
+#back {
+    font-size: 20px;
+    background-color: transparent; 
+    border: none;
+    color: #fff;
+}
+
+#qrcode, #menu{
+    display: inline-block;
+}

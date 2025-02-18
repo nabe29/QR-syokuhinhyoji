@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- pwaの操作。一回だけ書けばいい -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register('/js/service-worker.js');
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <button id="outbtn" class="outbtn"><img id="out-img" src="./images/logout.png"></button>
+        <div class="header-center">
+            <img id="foodgroup" src="./images/onigiri.png">
+            <h1>QR食品表示</h1>
+            <img id="QRcode" src="./images/QRcode.png">
+        </div>
+    </div>
+    <h2 id="welcomeMsg"></h2>
+    <p id="name"></p>
+    <h3 id="sta">Googleアカウントでログインしてください</h3>
+    <button id="googlesignin" class="image-button"><img id="image-google" src="./images/google.png">
+    </button>
+
+    </div>
+    <div class="route-list">
+        <ul class="route">
+        </ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

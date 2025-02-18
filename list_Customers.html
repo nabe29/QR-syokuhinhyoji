@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex" />
+
+  <link rel="stylesheet" href="css/list_Customers_phon.css">
+  
+  <title>一覧</title>
+</head>
+
+<body>
+  <h1>お店</h1>
+  <form action="#" id="searchKw" class="search-form-006">
+    <label>
+      <input id="inputSearch" type="text" placeholder="キーワードを入力">
+    </label>
+    <button id="keywordSearchBtn" type="button" aria-label="検索" ></button>
+  </form>
+
+  <div class="allergy">
+    <div id="allergyJump"></div>
+    <h2 id="textLine">アレルゲン・苦手な食べ物</h2>
+    <p>アレルゲン物質をお選びください</p>
+    <p>※選択したものは検索から除外されます</p>
+    <form class="searchForm">
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="allergy1" name="allergy" value="小麦">小麦</label><br>
+        <label><input type="checkbox" id="allergy2" name="allergy" value="卵">卵</label><br>
+        <label><input type="checkbox" id="allergy3" name="allergy" value="乳">乳</label><br>
+        <label><input type="checkbox" id="allergy4" name="allergy" value="えび">えび</label><br>
+        <label><input type="checkbox" id="allergy5" name="allergy" value="かに">かに</label><br>
+        <label><input type="checkbox" id="allergy6" name="allergy" value="そば">そば</label><br>
+        <label><input type="checkbox" id="allergy7" name="allergy" value="くるみ">くるみ</label><br>
+        <label><input type="checkbox" id="allergy8" name="allergy" value="落花生">落花生</label><br>
+        <label><input type="checkbox" id="allergy9" name="allergy" value="アーモンド" />アーモンド</label><br>
+        <label><input type="checkbox" id="allergy10" name="allergy" value="いくら" />いくら</label><br>
+        <label><input type="checkbox" id="allergy11" name="allergy" value="キウイ" />キウイ</label><br>
+        <label><input type="checkbox" id="allergy12" name="allergy" value="大豆" />大豆</label><br>
+        <label><input type="checkbox" id="allergy13" name="allergy" value="バナナ" />バナナ</label><br>
+        <label><input type="checkbox" id="allergy14" name="allergy" value="山芋" />山芋</label><br>
+        <label><input type="checkbox" id="allergy15" name="allergy" value="カシューナッツ" />カシューナッツ</label><br>
+        <label><input type="checkbox" id="allergy16" name="allergy" value="桃" />桃</label><br>
+        <label><input type="checkbox" id="allergy17" name="allergy" value="ごま" />ごま</label><br>
+        <label><input type="checkbox" id="allergy18" name="allergy" value="さば" />さば</label><br>
+        <label><input type="checkbox" id="allergy19" name="allergy" value="さけ" />さけ</label><br>
+        <label><input type="checkbox" id="allergy20" name="allergy" value="いか" />いか</label><br>
+        <label><input type="checkbox" id="allergy21" name="allergy" value="鶏肉" />鶏肉</label><br>
+        <label><input type="checkbox" id="allergy22" name="allergy" value="りんご" />りんご</label><br>
+        <label><input type="checkbox" id="allergy23" name="allergy" value="松茸" />松茸</label><br>
+        <label><input type="checkbox" id="allergy24" name="allergy" value="アワビ" />アワビ</label><br>
+        <label><input type="checkbox" id="allergy25" name="allergy" value="オレンジ" />オレンジ</label><br>
+        <label><input type="checkbox" id="allergy26" name="allergy" value="牛肉" />牛肉</label><br>
+        <label><input type="checkbox" id="allergy27" name="allergy" value="ゼラチン" />ゼラチン</label><br>
+        <label><input type="checkbox" id="allergy28" name="allergy" value="豚肉" />豚肉</label><br>
+      </div>
+      <!--検索ボタン-->
+      <button id="searchBtn" type="button" >検索</button>
+    </form>
+  </div>
+  <h2>商品一覧</h2>
+    <div id="content">
+        <div id="dataList"></div>
+    </div>
+    
+
+    <!--Firebase JavaScript SDK-->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/humburuger.js"></script>
+    <script src="js/list_Customers.js"></script>
+
+  </body>
+
+</html>

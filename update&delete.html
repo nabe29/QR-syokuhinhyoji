@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registration.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="outbtn">
+            <button id="back">＜　メニュー</button>
+        </div>
+        <h1>メニュー内容の編集</h1>
+    </div>
+    <h3>商品名</h3>
+    <input type="text" id="goodsName">
+    <p id="error"></p>
+    <h3>商品画像</h3>
+
+    <input type="file" id="file-input1" /><br>
+    <img id="goodsPreview" style="max-width: 300px; margin-top: 20px;" />
+
+    <h3>商品の説明</h3>
+    <input type="text" id="description">
+    <h3>栄養成分表示</h3>
+    <input type="text" id="component">
+    <h3>注意書き</h3>
+    <input type="text" id="notes">
+    <h3>レンジの温め時間</h3>
+    <input type="text" id="warmMinutes">分
+    <input type="text" id="warmSecond">秒
+    <h3>販売元</h3>
+    <input type="text" id="seller">
+    <h3>カテゴリ名</h3>
+    <select id="category">
+        <option value="惣菜">惣菜</option>
+        <option value="飲料">飲料</option>
+        <option value="冷凍食品">冷凍食品</option>
+        <option value="乳製品">乳製品</option>
+        <option value="お菓子類">お菓子類</option>
+        <option value="肉製品">肉製品</option>
+        <option value="穀物製品">穀物製品</option>
+        <option value="パン製品">パン製品</option>
+    </select>
+    <h3>原材料</h3>
+    <input type="text" id="material">
+
+    <h3>産地</h3>
+    <input type="text" id="productionArea">
+
+
+    <h3>アレルゲン</h3>
+        <label><input type="checkbox" id="allergy1" name="allergy" value="小麦">小麦</label><br>
+        <label><input type="checkbox" id="allergy2" name="allergy" value="卵">卵</label><br>
+        <label><input type="checkbox" id="allergy3" name="allergy" value="乳">乳</label><br>
+        <label><input type="checkbox" id="allergy4" name="allergy" value="えび">えび</label><br>
+        <label><input type="checkbox" id="allergy5" name="allergy" value="かに">かに</label><br>
+        <label><input type="checkbox" id="allergy6" name="allergy" value="そば">そば</label><br>
+        <label><input type="checkbox" id="allergy7" name="allergy" value="くるみ">くるみ</label><br>
+        <label><input type="checkbox" id="allergy8" name="allergy" value="落花生">落花生</label><br>
+        <label><input type="checkbox" id="allergy9" name="allergy" value="アーモンド" />アーモンド</label><br>
+        <label><input type="checkbox" id="allergy10" name="allergy" value="いくら" />いくら</label><br>
+        <label><input type="checkbox" id="allergy11" name="allergy" value="キウイ" />キウイ</label><br>
+        <label><input type="checkbox" id="allergy12" name="allergy" value="大豆" />大豆</label><br>
+        <label><input type="checkbox" id="allergy13" name="allergy" value="バナナ" />バナナ</label><br>
+        <label><input type="checkbox" id="allergy14" name="allergy" value="山芋" />山芋</label><br>
+        <label><input type="checkbox" id="allergy15" name="allergy" value="カシューナッツ" />カシューナッツ</label><br>
+        <label><input type="checkbox" id="allergy16" name="allergy" value="桃" />桃</label><br>
+        <label><input type="checkbox" id="allergy17" name="allergy" value="ごま" />ごま</label><br>
+        <label><input type="checkbox" id="allergy18" name="allergy" value="さば" />さば</label><br>
+        <label><input type="checkbox" id="allergy19" name="allergy" value="さけ" />さけ</label><br>
+        <label><input type="checkbox" id="allergy20" name="allergy" value="いか" />いか</label><br>
+        <label><input type="checkbox" id="allergy21" name="allergy" value="鶏肉" />鶏肉</label><br>
+        <label><input type="checkbox" id="allergy22" name="allergy" value="りんご" />りんご</label><br>
+        <label><input type="checkbox" id="allergy23" name="allergy" value="松茸" />松茸</label><br>
+        <label><input type="checkbox" id="allergy24" name="allergy" value="アワビ" />アワビ</label><br>
+        <label><input type="checkbox" id="allergy25" name="allergy" value="オレンジ" />オレンジ</label><br>
+        <label><input type="checkbox" id="allergy26" name="allergy" value="牛肉" />牛肉</label><br>
+        <label><input type="checkbox" id="allergy27" name="allergy" value="ゼラチン" />ゼラチン</label><br>
+        <label><input type="checkbox" id="allergy28" name="allergy" value="豚肉" />豚肉</label><br>
+
+    <h3>値段</h3>
+    <input type="text" id="cost">円
+    <h3>詳細画面のQRコード</h3>
+    <div id="printable-image"></div>
+    <button id="print-button">QRコードを印刷</button>
+
+
+    <hr>
+
+    <div id="buttonContainer">
+        <button id="update">更新</button>
+        <button id="delete">削除</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+    <script type="module" src="js/update&delete.js"></Script>
+</body>
+
+</html>

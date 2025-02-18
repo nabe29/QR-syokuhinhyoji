@@ -1,0 +1,130 @@
+/* ページ全体の背景色 */
+html {
+    background-color: #FBF6EE;
+}
+
+/* ページ全体のmarginとpaddingをなくす  */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ページの上部 */
+.header {
+    background-color: #FFB534;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* ログアウトボタン（id） */
+#outbtn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+/* ログアウトボタンの画像 */
+#out-img {
+    margin-right: 5px;
+    width: 30px;
+}
+
+/* タイトル */
+h1 {
+    flex: 1;
+    /* 残りの空間を h1 に均等に割り当てる */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+    margin-right: 12%;
+    margin-left: -5%;
+}
+
+/* ページ左右の余白 */
+#content {
+    margin: 10px;
+}
+
+/* 戻るボタン */
+#back {
+    font-size: 20px;
+    background-color: transparent; 
+    border: none;
+    color: #fff;
+}
+
+/* タイトル */
+h1 {
+    flex: 1;
+    /* 残りの空間を h1 に均等に割り当てる */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    margin-right: 12%;
+    padding-top: 15px;
+}
+
+h3{
+    font-size: 30px;
+    margin-left: 30%;
+}
+
+input{
+    width: 30%;
+    margin-left: 30%;
+}
+
+img{
+    margin-left: 30%;
+    max-width: 300px;
+}
+
+select{
+    margin-left: 30%;
+}
+
+ul{
+    margin-left: 25%;
+}
+
+#plusButton{
+    margin-left: 30%;
+}
+
+#warmMinutes{
+    width: 5%;
+}
+
+#warmSecond{
+    width: 5%;
+    margin-left: -3px;
+}
+
+label{
+    margin-left: -160px;
+}
+
+label input {
+    margin-right: -170px; /* 適切なマージンを設定してください */
+}
+
+#buttonContainer{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#save,#clear{
+    width: 100px;
+}
+
+#print-button{
+    margin-left: 30%;
+    margin-top: 10px;
+}

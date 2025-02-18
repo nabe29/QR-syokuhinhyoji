@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <!-- <link rel="manifest" href="./manifest.json"> -->
+    <title>メニュー画面</title>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="outbtn">
+            <button id="outbtn" class="outbtn"><img id="out-img" src="./images/logout.png"></button>
+        </div>
+        <h1>メニュー</h1>
+    </div>
+    <div id="content">
+        <div class="nextbtn">
+            <!-- <button id="listButton">一覧画面の編集</button> -->
+            <button id="registrationButton">新規商品登録</button>
+        </div>
+        <h3 id="listtext">商品一覧</h3>
+        <div id="dataList"></div>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+        <!-- QR Code Generatorのライブラリを読み込む -->
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+        <script type="module" src="js/menu.js"></script>
+
+    </div>
+</body>
+
+</html>
